@@ -97,7 +97,7 @@
       }
     });
     card.addEventListener('click', (event) => {
-      if (event.target.closest('a, button')) return;
+      if (event.target.closest('a, button, details, summary')) return;
       card.classList.toggle('is-inspected');
     });
   });
